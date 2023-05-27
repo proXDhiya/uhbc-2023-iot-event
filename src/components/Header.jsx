@@ -3,41 +3,16 @@ import {
     Box,
     Grid,
     Image,
-    Link,
+    Button,
     Text,
 } from '@chakra-ui/react';
 
+// components
+import Nav from './Nav';
+
 // images
 import bgImageHeader from '../utils/img/aa9.jpg';
-import logo from '../utils/img/flogo.ico';
-
-// links
-const links = [
-    {
-        name: "About",
-        href: "#about",
-    },
-    {
-        name: "Speakers",
-        href: "#speakers",
-    },
-    {
-        name: "Schedule",
-        href: "#schedule",
-    },
-    {
-        name: "Photos",
-        href: "#photos",
-    },
-    {
-        name: "Partners",
-        href: "#partners",
-    },
-    {
-        name: "Contact",
-        href: "#contact",
-    }
-]
+import logo from '../utils/img/logoconf2.png';
 
 const Header = () => {
     // render
@@ -49,88 +24,77 @@ const Header = () => {
             bgPosition="center"
             bgRepeat="no-repeat"
             bgAttachment="fixed"
+            bgColor="rgba(0, 0, 0, 0.65)"
             bgBlendMode="darken"
-            bgColor="rgba(0, 0, 0, 0.45)"
             w="100%"
             h="100vh"
         >
-            <Grid
-                templateColumns="auto 1fr repeat(6, 110px)"
-                templateRows="1fr"
-                gap="10px"
-                w="container.xl"
-                h="60px"
-                pos="fixed"
-                top="0"
-                left="50%"
-                transform="translateX(-50%)"
-            >
-                <Link
-                    href="/"
+            <Nav />
+            <>
+                <Image 
+                    src={logo}
+                    alt="logo"
+                    w="400px"
+                    h="auto"
+                    mx="auto"
+                    pt="50px"
+                />
+                <Grid
+                    gridTemplateColumns={"1fr"}
+                    gridTemplateRows={"repeat(4, auto)"}
+                    gridGap="1rem"
+                    w="container.lg"
+                    h="fit-content"
+                    mx="auto"
                     color="white"
-                    textTransform="uppercase"
-                    fontSize="l"
-                    letterSpacing="wide"
-                    display="flex"
-                    alignItems="center"
-                    _hover={{
-                        textDecoration: 'none',
-                        color: 'gray.300',
-                    }}
+                    textAlign="center"
                 >
-                    <Image 
-                        src={logo}
-                        alt="logo"
-                        w="60px"
-                        h="60px"
-                        objectFit="cover"
-                        objectPosition="center"
-                        mr="10px"
-                    />
-                    <Text>
-                        Scientific manifestation 2023
+                    <Text
+                        textTransform="uppercase"
+                        fontSize="2xl"
+                        textDecor="underline"
+                        _hover={{
+                            color: 'purple.200',
+                            scale: 1.1,
+                        }}
+                        transition="all .3s"
+                    >
+                        15 - 16 September, 2023 / UHBC University
                     </Text>
-                </Link>
-                {
-                    links.map((link, index) => {
-                        return (
-                            <Link
-                                key={index}
-                                href={link.href}
-                                color="white"
-                                textTransform="uppercase"
-                                fontSize="l"
-                                letterSpacing="wide"
-                                display="flex"
-                                alignItems="center"
-                                gridColumnStart={index + 3}
-                                pos="relative"
-                                w="fit-content"
-                                placeSelf="center"
-                                _hover={{
-                                    textDecoration: 'none',
-                                    color: 'gray.300',
-                                    _after: {
-                                        width: '100%',
-                                    }
-                                }}
-                                _after={{
-                                    content: '""',
-                                    display: 'block',
-                                    pos: 'absolute',
-                                    w: '0',
-                                    h: '2px',
-                                    bg: 'white',
-                                    bottom: '-2px',
-                                    transition: 'width .3s',
-                                }}
-                            >
-                                {link.name}
-                            </Link>
-                        );
-                    })
-                }
-            </Grid>
+                    <Text
+                        textTransform="uppercase"
+                        fontSize="2xl"
+                        fontWeight="bold"
+                        letterSpacing="wide"
+                    >
+                        FIRST INTERNATIONAL CONFERENCE ON ARTIFICIEL INTELLIGENCE, SMART TECHNOLOGIES AND COMMUNICATIONS
+                    </Text>
+                    <Text
+                        textTransform="uppercase"
+                        fontSize="xl"
+                        color="gray.300"
+                    >
+                        FACULTY OF EXACT SCIENCES & INFORMATICS
+                    </Text>
+                    <Button
+                        as="a"
+                        href="#"
+                        colorScheme="purple"
+                        variant="solid"
+                        size="lg"
+                        w="fit-content"
+                        mx="auto"
+                        mt="1rem"
+                        _hover={{
+                            scale: 1.1,
+                        }}
+                        zIndex="1"
+                        transition="all .3s"
+                    >
+                        Register Now
+                    </Button>
+                </Grid>
+            </>
         </Box>
     );
 };

@@ -12,7 +12,7 @@ function App() {
     <ChakraProvider>
       <div className="App"
         style={{
-          backgroundColor: '#f5f5f5',
+          backgroundColor: 'var(--chakra-colors-gray-900)',
           width: '99vw',
           height: 'auto',
           minHeight: '100vh',

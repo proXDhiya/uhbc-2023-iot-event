@@ -7,6 +7,18 @@ import {
     Image,
 } from "@chakra-ui/react";
 
+// icons
+import {
+    AiFillCalendar,
+    AiOutlinePaperClip
+} from "react-icons/ai";
+import {
+    FaMapMarkedAlt
+} from "react-icons/fa";
+import {
+    HiOutlineSpeakerphone
+} from "react-icons/hi";
+
 // import images
 import comutingImage from '../utils/img/cards/computing.jpg';
 import energyImage from '../utils/img/cards/energy.jpg';
@@ -15,6 +27,7 @@ import aiImage from '../utils/img/cards/ai.png';
 import trendsImage from '../utils/img/cards/tech.png';
 import ambientImage from '../utils/img/cards/int.png';
 import networkingImage from '../utils/img/cards/network.png';
+import backgroundImage from '../utils/img/aa5.jpg';
 
 const list = [
     {
@@ -51,6 +64,29 @@ const list = [
         img: networkingImage,
         title: "Networking",
         desc: "Network Security,Network Management,Network Performance Analysis,Network Simulation and Modeling,Network Protocols,Network Architectures,Wireless Networks,Mobile Networks,Ad-hoc Networks,Internet of Things,Cloud Computing,Software Defined Networks,Network Function Virtualization,Network Coding,Networks"
+    }
+];
+
+const list2 = [
+    {
+        icon: <AiFillCalendar />,
+        title: "Conference Date",
+        desc: "September 16-17, 2023"
+    },
+    {
+        icon: <FaMapMarkedAlt />,
+        title: "Location",
+        desc: "UHBC CHLEF"
+    },
+    {
+        icon: <AiOutlinePaperClip />,
+        title: "Total Papers",
+        desc: "100+"
+    },
+    {
+        icon: <HiOutlineSpeakerphone />,
+        title: "Total Speakers",
+        desc: "20+"
     }
 ];
 
@@ -134,15 +170,98 @@ const About = () => {
                                     />
                                     <Text
                                         position="absolute"
-                                        top="28.5%"
+                                        top="29%"
                                         bg="rgba(0,0,0,0.5)"
                                         backdropFilter="blur(0.5rem)"
+                                        borderRadius="0 0.5rem 0 0"
+                                        boxShadow={"xl"}
                                         p=".5rem"
+                                        letterSpacing="wide"
                                         textTransform="uppercase"
                                     >
                                         {item.title}
                                     </Text>
-                                    
+                                    {/* TODO! */}
+                                </Box>
+                            )
+                        })
+                    }
+                </Grid>
+            </Container>
+            <Container
+                as="section"
+                w="100%"
+                maxW="100%"
+                h="fit-content"
+                color="white"
+                py="4rem"
+                backgroundImage={backgroundImage}
+                backgroundColor="rbga(0,0,0,0.6)"
+                backgroundPosition="center"
+                backgroundSize="cover"
+                backgroundRepeat="no-repeat"
+                backgroundAttachment="fixed"
+                backgroundBlendMode="darken"
+            >
+                <Grid
+                    w="container.lg"
+                    mx="auto"
+                    gridTemplateColumns={"repeat(4, 1fr)"}
+                    gridTemplateRows={"1fr"}
+                    gap="2rem"
+                >
+                    {
+                        list2.map((item, index) => {
+                            // render
+                            return (
+                                <Box
+                                    key={index}
+                                    w="100%"
+                                    h="200px"
+                                    bg="rgba(0,0,0,0.7)"
+                                    borderRadius="0.5rem"
+                                    boxShadow={"xl"}
+                                    backdropFilter="blur(0.5rem)"
+                                    p="1rem"
+                                    display="flex"
+                                    flexDirection="column"
+                                    justifyContent="center"
+                                    alignItems="center"
+                                    transition="all 0.3s ease-in-out"
+                                    opacity="0.9"
+                                    gap="1rem"
+                                    _hover={{
+                                        opacity: "1",
+                                        transform: "scale(1.03)",
+                                        color: "purple.300"
+                                    }}
+                                >
+                                    <Box>
+                                        {
+                                            React.cloneElement(item.icon, {
+                                                key: index,
+                                                size: "2rem",
+                                                color: "white"
+                                            })
+                                        }
+                                    </Box>
+                                    <Text
+                                        textAlign="center"
+                                        fontWeight="light"
+                                        >
+                                        {item.desc}
+                                    </Text>
+                                    <Text
+                                        as="h3"
+                                        fontSize="1.1rem"
+                                        fontWeight="bold"
+                                        letterSpacing="0.1rem"
+                                        mb="1rem"
+                                        textAlign="center"
+                                        textTransform="uppercase"
+                                    >
+                                        {item.title}
+                                    </Text>
                                 </Box>
                             )
                         })

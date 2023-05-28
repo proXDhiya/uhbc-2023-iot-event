@@ -5,6 +5,9 @@ import {
     Grid,
     Text,
     Image,
+    List,
+    ListItem,
+    ListIcon
 } from "@chakra-ui/react";
 
 // icons
@@ -33,37 +36,78 @@ const list = [
     {
         img: comutingImage,
         title: "Computing",
-        desc: "Cloud Computing , Distributed Computing Systems Quantum Computing,Distributed and parallel systems,Cognitive Computing;Grid Computing Optimization,Embedded Computing"
+        ul: [
+            "Cloud Computing",
+            "Distributed Computing Systems",
+            "Quantum Computing",
+            "Distributed and parallel systems",
+            "Cognitive Computing",
+        ]
     },
     {
         img: energyImage,
         title: "ENERGY AND RESOURCES",
-        desc: "Sustainable energy;sustainable environment;Environment and Technologies"
+        ul: [
+            "Sustainable energy",
+            "sustainable environment",
+            "Environment and Technologies",
+            "Energy and Resources",
+        ]
     },
     {
         img: informationImage,
         title: "information system",
-        desc: "Data & Process Mining, Data warehousing and Query Optimization,Semantic Web and Ontologies; Multi-Agent Systems; E-commerce"
+        ul: [
+            "Data & Process Mining",
+            "Data warehousing and Query Optimization",
+            "Semantic Web and Ontologies",
+            "Multi-Agent Systems",
+            "E-commerce",
+        ]
     },
     {
         img: aiImage,
         title: "Artificial Intelligence",
-        desc: "Machine Learning/Deep learning,Decision Support Systems,Neural Networks , Fuzzy Logic,Natural Language Processing,Robotics Neural Networks , Fuzzy Logic,Expert Systems,Agents and Multi-agent Systems,Natural Language Processing,Data Mining,Computational Optimization,Robotics,Sentiment Analysis"
+        ul: [
+            "Machine Learning/Deep learning",
+            "Decision Support Systems",
+            "Neural Networks",
+            "Fuzzy Logic",
+            "Natural Language Processing",
+        ]
     },
     {
         img: trendsImage,
         title: "TECHNOLOGY TRENDS",
-        desc: "Big Data Management and Analytics,Internet of Things,Blockchain,Datamining,Mobile Applications,Social Networks Applications"
+        ul: [
+            "Big Data Management and Analytics",
+            "Internet of Things",
+            "Blockchain",
+            "Datamining",
+            "Mobile Applications",
+        ]
     },
     {
         img: ambientImage,
         title: "AMBIENT INTELLIGENCE",
-        desc: "Smart Network Communications,Smart Agriculture& IoT Solutions,Smart Connected Devices,Smart helthcare ,Sensors and measurements,Monitoring systems,"
+        ul: [
+            "Smart Network Communications",
+            "Smart Agriculture& IoT Solutions",
+            "Smart Connected Devices",
+            "Smart helthcare",
+            "Sensors and measurements",
+        ]
     },
     {
         img: networkingImage,
         title: "Networking",
-        desc: "Network Security,Network Management,Network Performance Analysis,Network Simulation and Modeling,Network Protocols,Network Architectures,Wireless Networks,Mobile Networks,Ad-hoc Networks,Internet of Things,Cloud Computing,Software Defined Networks,Network Function Virtualization,Network Coding,Networks"
+        ul: [
+            "Network Security",
+            "Network Management",
+            "Network Performance Analysis",
+            "Network Simulation and Modeling",
+            "Network Protocols"
+        ]
     }
 ];
 
@@ -181,7 +225,41 @@ const About = () => {
                                     >
                                         {item.title}
                                     </Text>
-                                    {/* TODO! */}
+                                    <Box>
+                                        <List
+                                            w="100%"
+                                            h="60%"
+                                            overflowY="auto"
+                                            p="1rem .5rem"
+                                            color="white"
+                                            listStyleType="disc"
+                                        >
+                                            {
+                                                item.ul.map((li, index) => {
+                                                    return (
+                                                        <ListItem
+                                                            key={index}
+                                                            fontSize="0.8rem"
+                                                            fontWeight="light"
+                                                            letterSpacing="0.1rem"
+                                                            textTransform="uppercase"
+                                                            mb="0.7rem"
+                                                            transition="all 0.3s ease-in-out"
+                                                            _hover={{
+                                                                color: "purple.300",
+                                                                fontWeight: "bold",
+                                                                letterSpacing: "0.05rem",
+                                                                scale: 1.1,
+                                                            }}
+                                                        >
+                                                            <ListIcon as={AiOutlinePaperClip} />
+                                                            {li}
+                                                        </ListItem>
+                                                    )
+                                                })
+                                            }
+                                        </List>
+                                    </Box>
                                 </Box>
                             )
                         })

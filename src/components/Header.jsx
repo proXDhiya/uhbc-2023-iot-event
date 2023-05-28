@@ -27,7 +27,9 @@ const Header = () => {
             bgColor="rgba(0, 0, 0, 0.65)"
             bgBlendMode="darken"
             w="100%"
-            h="100vh"
+            minH="100vh"
+            h="fit-content"
+            pb="50px"
         >
             <Nav />
             <>

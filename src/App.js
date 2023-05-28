@@ -6,6 +6,7 @@ import {
 // components
 import Header from './components/Header';
 import Timer from './components/Timer';
+import About from './components/About';
 
 // event time end - Algeria
 const eventTimeEnd = new Date('2023-09-16T00:00:00');
@@ -24,6 +25,7 @@ function App() {
       >
         <Header />
         <Timer time={eventTimeEnd} />
+        <About />
       </div>
     </ChakraProvider>
   );

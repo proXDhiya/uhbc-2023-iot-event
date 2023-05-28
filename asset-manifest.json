@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b3678b63.css",
+    "main.js": "/static/js/main.96af9ed3.js",
+    "static/media/computing.jpg": "/static/media/computing.1859df96c7f6f29ae434.jpg",
+    "static/media/si.jpg": "/static/media/si.9ac999fd04b51e8fe2ee.jpg",
+    "static/media/aa9.jpg": "/static/media/aa9.48af917299cfb242a99c.jpg",
+    "static/media/energy.jpg": "/static/media/energy.ace0be10d29935a9a8c2.jpg",
+    "static/media/network.png": "/static/media/network.89fb58012b29dc49950d.png",
+    "static/media/tech.png": "/static/media/tech.5932a85596d50883c64a.png",
+    "static/media/ai.png": "/static/media/ai.fbaebdb1273cf29fcb0d.png",
+    "static/media/int.png": "/static/media/int.f86490623284188d2d28.png",
+    "static/media/logoconf2.png": "/static/media/logoconf2.cce8ac7796d3632a0aa4.png",
+    "static/media/flogo.ico": "/static/media/flogo.d3191b15e08816e5f36b.ico",
+    "index.html": "/index.html",
+    "main.b3678b63.css.map": "/static/css/main.b3678b63.css.map",
+    "main.96af9ed3.js.map": "/static/js/main.96af9ed3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3678b63.css",
+    "static/js/main.96af9ed3.js"
+  ]
+}

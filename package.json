@@ -1,6 +1,7 @@
 {
   "name": "uhbc-comp-iot",
   "version": "0.1.0",
+  "homepage": "https://proxdhiya.github.io/uhbc-2023-iot-event/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.6.1",

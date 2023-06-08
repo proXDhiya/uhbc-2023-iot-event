@@ -27,8 +27,8 @@ const Header = () => {
             bgColor="rgba(0, 0, 0, 0.65)"
             bgBlendMode="darken"
             w="100%"
-            minH="100vh"
             h="fit-content"
+            pt="10px"
             pb="50px"
         >
             <Nav />
@@ -36,10 +36,9 @@ const Header = () => {
                 <Image 
                     src={logo}
                     alt="logo"
-                    w="400px"
+                    w="350px"
                     h="auto"
                     mx="auto"
-                    pt="50px"
                 />
                 <Grid
                     gridTemplateColumns={"1fr"}
@@ -61,7 +60,7 @@ const Header = () => {
                         }}
                         transition="all .3s"
                     >
-                        15 - 16 September, 2023 / UHBC University
+                        8 - 9 Novembre, 2023 / UHBC University
                     </Text>
                     <Text
                         textTransform="uppercase"
@@ -69,7 +68,7 @@ const Header = () => {
                         fontWeight="bold"
                         letterSpacing="wide"
                     >
-                        FIRST INTERNATIONAL CONFERENCE ON ARTIFICIEL INTELLIGENCE, SMART TECHNOLOGIES AND COMMUNICATIONS
+                        FIRST NATIONAL CONFERENCE ON ARTIFICIEL INTELLIGENCE, SMART TECHNOLOGIES AND COMMUNICATIONS
                     </Text>
                     <Text
                         textTransform="uppercase"

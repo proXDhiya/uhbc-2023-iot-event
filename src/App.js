@@ -20,6 +20,12 @@ import Footer from './components/Footer';
 const eventTimeEnd = new Date('2023-11-08T00:00:00');
 
 function App() {
+  // change title on load
+  React.useEffect(() => {
+    document.title = 'AISTC 2023';
+  }, []);
+
+  // render
   return (
     <ChakraProvider>
       <div className="App"

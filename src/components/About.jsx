@@ -23,14 +23,14 @@ import {
 } from "react-icons/hi";
 
 // import images
-import comutingImage from '../utils/img/cards/computing.jpg';
-import energyImage from '../utils/img/cards/energy.jpg';
-import informationImage from '../utils/img/cards/si.jpg';
-import aiImage from '../utils/img/cards/ai.png';
-import trendsImage from '../utils/img/cards/tech.png';
-import ambientImage from '../utils/img/cards/int.png';
-import networkingImage from '../utils/img/cards/network.png';
-import backgroundImage from '../utils/img/aa5.jpg';
+import comutingImage from '../utils/img/cards/computing.webp';
+import energyImage from '../utils/img/cards/energy.webp';
+import informationImage from '../utils/img/cards/si.webp';
+import aiImage from '../utils/img/cards/ai.webp';
+import trendsImage from '../utils/img/cards/tech.webp';
+import ambientImage from '../utils/img/cards/int.webp';
+import networkingImage from '../utils/img/cards/network.webp';
+import backgroundImage from '../utils/img/aa5.webp';
 
 const list = [
     {

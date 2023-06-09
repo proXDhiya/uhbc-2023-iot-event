@@ -1,7 +1,7 @@
-import img1 from '../utils/img/partners/partner-1.png';
-import img2 from '../utils/img/partners/partner-2.png';
-import img3 from '../utils/img/partners/partner-3.png';
-import img4 from '../utils/img/partners/partner-4.png';
+import img1 from '../utils/img/partners/partner-1.webp';
+import img2 from '../utils/img/partners/partner-2.webp';
+import img3 from '../utils/img/partners/partner-3.webp';
+import img4 from '../utils/img/partners/partner-4.webp';
 
 const partnersData = [
     {

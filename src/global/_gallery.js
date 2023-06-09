@@ -1,7 +1,7 @@
 // images
-import img1 from '../utils/img/gallery/_25A9606-2image1.jpg'
-import img2 from '../utils/img/gallery/devfest-02.jpg'
-import img3 from '../utils/img/gallery/ESaqcJOUcAAkkin.jpg'
+import img1 from '../utils/img/gallery/_25A9606-2image1.webp'
+import img2 from '../utils/img/gallery/devfest-02.webp'
+import img3 from '../utils/img/gallery/ESaqcJOUcAAkkin.webp'
 
 const galleryData = [
     {

@@ -6,7 +6,7 @@ import {
 } from "@chakra-ui/react";
 
 // image
-import bgImageSubmition from '../utils/img/aa8.png';
+import bgImageSubmition from '../utils/img/aa8.webp';
 
 const Submition = () => {
     // render

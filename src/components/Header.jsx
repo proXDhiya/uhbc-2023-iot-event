@@ -11,8 +11,8 @@ import {
 import Nav from './Nav';
 
 // images
-import bgImageHeader from '../utils/img/aa9.jpg';
-import logo from '../utils/img/logoconf2.png';
+import bgImageHeader from '../utils/img/aa9.webp';
+import logo from '../utils/img/logoconf2.webp';
 
 const Header = () => {
     // render
@@ -36,7 +36,7 @@ const Header = () => {
                 <Image 
                     src={logo}
                     alt="logo"
-                    w="350px"
+                    w="400px"
                     h="auto"
                     mx="auto"
                 />
@@ -49,6 +49,7 @@ const Header = () => {
                     mx="auto"
                     color="white"
                     textAlign="center"
+                    mt="-50px"
                 >
                     <Text
                         textTransform="uppercase"

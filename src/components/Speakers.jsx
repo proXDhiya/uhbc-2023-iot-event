@@ -11,10 +11,10 @@ import {
 } from "react-icons/bs";
 
 // images
-import img1 from '../utils/img/speakers/nayyar.jfif';
-import img2 from '../utils/img/speakers/Samir.jfif';
-import img3 from '../utils/img/speakers/bellatrache.png';
-import img4 from '../utils/img/speakers/selma.jpg';
+import img1 from '../utils/img/speakers/nayyar.webp';
+import img2 from '../utils/img/speakers/Samir.webp';
+import img3 from '../utils/img/speakers/bellatrache.webp';
+import img4 from '../utils/img/speakers/selma.webp';
 
 const list = [
     {

@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 // images
-import logo from '../utils/img/flogo.ico';
+import logo from '../utils/img/flogo.webp';
 
 // links
 const links = [

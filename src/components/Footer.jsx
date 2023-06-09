@@ -8,6 +8,17 @@ const Footer = () => {
     // render
     return (
         <>
+            <Container
+                as="main"
+                w="100%"
+                maxW="100%"
+                h="fit-content"
+                color="white"
+                bg="black"
+                py="4rem"
+            >
+            
+            </Container>
         </>
     )
 };

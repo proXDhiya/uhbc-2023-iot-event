@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.b3678b63.css","mappings":"AAAA,EAGI,qBAAsB,CADtB,QAAS,CADT,SAGJ,CAEA,KACI,sBACJ","sources":["index.css"],"sourcesContent":["* {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    scroll-behavior: smooth;\r\n}\r\n"],"names":[],"sourceRoot":""}

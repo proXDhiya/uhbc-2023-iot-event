@@ -11,29 +11,7 @@ import {
 import logo from '../utils/img/flogo.webp';
 
 // links
-const links = [
-    {
-        name: "About",
-        href: "#about",
-    },
-    {
-        name: "Speakers",
-        href: "#speakers",
-    },
-    {
-        name: "Schedule",
-        href: "#schedule",
-    },
-    
-    {
-        name: "Partners",
-        href: "#partners",
-    },
-    {
-        name: "Contact",
-        href: "#contact",
-    }
-]
+import links from "../global/_Links";
 
 
 const Nav = () => {

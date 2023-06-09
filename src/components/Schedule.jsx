@@ -7,7 +7,8 @@ import {
     AccordionIcon,
     Container,
     Text,
-    Grid
+    Grid,
+    Spacer
 } from "@chakra-ui/react";
 
 // data
@@ -95,7 +96,6 @@ const Schedule = () => {
                                                     templateRows="50px"
                                                     alignItems="center"
                                                     w="100%"
-                                                    rowGap={"1rem"}
                                                 >
                                                     <Text
                                                         as="span"
@@ -120,8 +120,10 @@ const Schedule = () => {
                                                         letterSpacing="1px"
                                                         borderBottom="1px solid white"
                                                         borderTop="1px solid white"
+                                                        borderLeft="1px solid white"
                                                         pb=".5rem"
                                                         pt=".4rem"
+                                                        pl="1rem"
                                                     >
                                                         Host
                                                     </Text>
@@ -134,11 +136,17 @@ const Schedule = () => {
                                                         borderRight="1px solid white"
                                                         borderBottom="1px solid white"
                                                         borderTop="1px solid white"
+                                                        borderLeft="1px solid white"
+                                                        pl="1rem"
                                                         pb=".5rem"
                                                         pt=".4rem"
                                                     >
                                                         Title
                                                     </Text>
+                                                    <Spacer 
+                                                        h="10px"
+                                                        gridColumn="1 / 4"
+                                                    />
                                                     {
                                                         item.program.map((event, index) => {
                                                             return (
@@ -151,12 +159,12 @@ const Schedule = () => {
                                                                         letterSpacing="1px"
                                                                         borderRight="1px solid white"
                                                                         borderLeft="1px solid white"
-                                                                        borderBottom={
-                                                                            index === item.program.length - 1 ? "1px solid white" : "none"
+                                                                        borderTop={
+                                                                            index === 0 ? "1px solid white" : "none"
                                                                         }
-                                                                        pb={
-                                                                            index === item.program.length - 1 ? ".5rem" : "none"
-                                                                        }
+                                                                        borderBottom="1px solid white"
+                                                                        pb=".5rem"
+                                                                        pt=".4rem"
                                                                         pl="1rem"
                                                                     >
                                                                         {event.time}
@@ -168,7 +176,13 @@ const Schedule = () => {
                                                                         textTransform="uppercase"
                                                                         letterSpacing="1px"
                                                                         borderRight="1px solid white"
-                                                                        ml="1rem"
+                                                                        borderTop={
+                                                                            index === 0 ? "1px solid white" : "none"
+                                                                        }
+                                                                        borderBottom="1px solid white"
+                                                                        pb=".5rem"
+                                                                        pt=".4rem"
+                                                                        pl="1rem"
                                                                     >
                                                                         {event.speaker}
                                                                     </Text>
@@ -179,7 +193,13 @@ const Schedule = () => {
                                                                         textTransform="uppercase"
                                                                         letterSpacing="1px"
                                                                         borderRight="1px solid white"
-                                                                        ml="1rem"
+                                                                        borderTop={
+                                                                            index === 0 ? "1px solid white" : "none"
+                                                                        }
+                                                                        borderBottom="1px solid white"
+                                                                        pb=".5rem"
+                                                                        pt=".4rem"
+                                                                        pl="1rem"
                                                                     >
                                                                         {event.title}
                                                                     </Text>

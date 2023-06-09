@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uhbc-2023-iot-event/static/css/main.29931534.css",
-    "main.js": "/uhbc-2023-iot-event/static/js/main.632e9649.js",
+    "main.css": "/uhbc-2023-iot-event/static/css/main.bc796100.css",
+    "main.js": "/uhbc-2023-iot-event/static/js/main.ae1b2602.js",
     "static/media/aa5.jpg": "/uhbc-2023-iot-event/static/media/aa5.55f0b1b030e42ee7b343.jpg",
     "static/media/computing.jpg": "/uhbc-2023-iot-event/static/media/computing.1859df96c7f6f29ae434.jpg",
     "static/media/si.jpg": "/uhbc-2023-iot-event/static/media/si.9ac999fd04b51e8fe2ee.jpg",
@@ -11,19 +11,22 @@
     "static/media/tech.png": "/uhbc-2023-iot-event/static/media/tech.5932a85596d50883c64a.png",
     "static/media/bellatrache.png": "/uhbc-2023-iot-event/static/media/bellatrache.100689f5651a9f30b6bc.png",
     "static/media/ai.png": "/uhbc-2023-iot-event/static/media/ai.fbaebdb1273cf29fcb0d.png",
+    "static/media/_25A9606-2image1.jpg": "/uhbc-2023-iot-event/static/media/_25A9606-2image1.4fdf83a785aebc500234.jpg",
     "static/media/int.png": "/uhbc-2023-iot-event/static/media/int.f86490623284188d2d28.png",
     "static/media/aa8.png": "/uhbc-2023-iot-event/static/media/aa8.243fedd57269ebcb4f55.png",
     "static/media/logoconf2.png": "/uhbc-2023-iot-event/static/media/logoconf2.cce8ac7796d3632a0aa4.png",
+    "static/media/devfest-02.jpg": "/uhbc-2023-iot-event/static/media/devfest-02.71be4546e1f8575fabb0.jpg",
     "static/media/selma.jpg": "/uhbc-2023-iot-event/static/media/selma.dd19037d31fe7fcdef04.jpg",
+    "static/media/ESaqcJOUcAAkkin.jpg": "/uhbc-2023-iot-event/static/media/ESaqcJOUcAAkkin.c94cffd5e522e47b53e5.jpg",
     "static/media/nayyar.jfif": "/uhbc-2023-iot-event/static/media/nayyar.efff1ab0b0a511dd63cd.jfif",
     "static/media/Samir.jfif": "/uhbc-2023-iot-event/static/media/Samir.186d5f7e69288fee5068.jfif",
     "static/media/flogo.ico": "/uhbc-2023-iot-event/static/media/flogo.d3191b15e08816e5f36b.ico",
     "index.html": "/uhbc-2023-iot-event/index.html",
-    "main.29931534.css.map": "/uhbc-2023-iot-event/static/css/main.29931534.css.map",
-    "main.632e9649.js.map": "/uhbc-2023-iot-event/static/js/main.632e9649.js.map"
+    "main.bc796100.css.map": "/uhbc-2023-iot-event/static/css/main.bc796100.css.map",
+    "main.ae1b2602.js.map": "/uhbc-2023-iot-event/static/js/main.ae1b2602.js.map"
   },
   "entrypoints": [
-    "static/css/main.29931534.css",
-    "static/js/main.632e9649.js"
+    "static/css/main.bc796100.css",
+    "static/js/main.ae1b2602.js"
   ]
 }

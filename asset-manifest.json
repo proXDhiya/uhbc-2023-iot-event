@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/uhbc-2023-iot-event/static/css/main.bc796100.css",
-    "main.js": "/uhbc-2023-iot-event/static/js/main.ae1b2602.js",
+    "main.css": "/uhbc-2023-iot-event/static/css/main.35e1e8a9.css",
+    "main.js": "/uhbc-2023-iot-event/static/js/main.f1ff65b5.js",
     "static/media/aa5.jpg": "/uhbc-2023-iot-event/static/media/aa5.55f0b1b030e42ee7b343.jpg",
     "static/media/computing.jpg": "/uhbc-2023-iot-event/static/media/computing.1859df96c7f6f29ae434.jpg",
     "static/media/si.jpg": "/uhbc-2023-iot-event/static/media/si.9ac999fd04b51e8fe2ee.jpg",
@@ -21,12 +21,13 @@
     "static/media/nayyar.jfif": "/uhbc-2023-iot-event/static/media/nayyar.efff1ab0b0a511dd63cd.jfif",
     "static/media/Samir.jfif": "/uhbc-2023-iot-event/static/media/Samir.186d5f7e69288fee5068.jfif",
     "static/media/flogo.ico": "/uhbc-2023-iot-event/static/media/flogo.d3191b15e08816e5f36b.ico",
+    "static/media/partner-2.png": "/uhbc-2023-iot-event/static/media/partner-2.c2a98a1b7b968bcd85b5.png",
     "index.html": "/uhbc-2023-iot-event/index.html",
-    "main.bc796100.css.map": "/uhbc-2023-iot-event/static/css/main.bc796100.css.map",
-    "main.ae1b2602.js.map": "/uhbc-2023-iot-event/static/js/main.ae1b2602.js.map"
+    "main.35e1e8a9.css.map": "/uhbc-2023-iot-event/static/css/main.35e1e8a9.css.map",
+    "main.f1ff65b5.js.map": "/uhbc-2023-iot-event/static/js/main.f1ff65b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc796100.css",
-    "static/js/main.ae1b2602.js"
+    "static/css/main.35e1e8a9.css",
+    "static/js/main.f1ff65b5.js"
   ]
 }

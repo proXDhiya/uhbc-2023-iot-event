@@ -9,6 +9,7 @@ import Timer from './components/Timer';
 import About from './components/About';
 import CommiteeMembers from './components/CommiteeMembers';
 import Speakers from './components/Speakers';
+import Submition from './components/Submition';
 
 // event time end - Algeria
 const eventTimeEnd = new Date('2023-11-08T00:00:00');
@@ -30,6 +31,7 @@ function App() {
         <About />
         <CommiteeMembers />
         <Speakers />
+        <Submition />
       </div>
     </ChakraProvider>
   );

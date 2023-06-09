@@ -86,9 +86,6 @@ const Header = () => {
                         w="fit-content"
                         mx="auto"
                         mt="1rem"
-                        _hover={{
-                            scale: 1.1,
-                        }}
                         zIndex="1"
                         transition="all .3s"
                     >

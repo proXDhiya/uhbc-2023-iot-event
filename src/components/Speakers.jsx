@@ -61,6 +61,16 @@ const Speakers = () => {
                 py="4rem"
                 id="speakers"
             >
+                <Text
+                    as="h2"
+                    fontSize="2rem"
+                    textAlign="center"
+                    textTransform="uppercase"
+                    letterSpacing="1px"
+                    mb="2rem"
+                >
+                    Speakers
+                </Text>
                 <Box
                     w="container.xl"
                     mx="auto"
@@ -82,6 +92,10 @@ const Speakers = () => {
                                 flexDirection="column"
                                 alignItems="center"
                                 justifyContent="center"
+                                transition="all .3s ease-in-out"
+                                _hover={{
+                                    transform: "scale(1.05)",
+                                }}
                             >
                                 <Image
                                     src={item.img}

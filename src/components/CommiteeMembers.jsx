@@ -49,8 +49,9 @@ const CommiteeMembers = () => {
                     <Text
                         as="h2"
                         fontSize="2rem"
-                        fontWeight="bold"
                         textAlign="center"
+                        textTransform="uppercase"
+                        letterSpacing="1px"
                         mb="2rem"
                     >
                         Commitee Members

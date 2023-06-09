@@ -107,19 +107,13 @@ const Contact = () => {
                         }
                     </Container>
                     <iframe
+                        title="map"
                         width="100%"
                         height="300"
                         data-lazy-type="iframe"
                         data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145824.56817474178!2d1.308635497342966!3d36.13495298621635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12840e6e830f3e65%3A0x2ad281f9e43abfc8!2sUniversit%C3%A9+Hassiba+Benbouali+(Rectorat)!5e0!3m2!1sfr!2sdz!4v1512037818878&amp;output=embed"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145824.56817474178!2d1.308635497342966!3d36.13495298621635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12840e6e830f3e65%3A0x2ad281f9e43abfc8!2sUniversit%C3%A9+Hassiba+Benbouali+(Rectorat)!5e0!3m2!1sfr!2sdz!4v1512037818878&amp;output=embed">
                     </iframe>
-                    <noscript>
-                        <iframe
-                            width="100%"
-                            height="300"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145824.56817474178!2d1.308635497342966!3d36.13495298621635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12840e6e830f3e65%3A0x2ad281f9e43abfc8!2sUniversit%C3%A9+Hassiba+Benbouali+(Rectorat)!5e0!3m2!1sfr!2sdz!4v1512037818878&amp;output=embed">
-                        </iframe>
-                    </noscript>
                 </Grid>
             </Container>
         </>

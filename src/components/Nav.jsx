@@ -128,7 +128,6 @@ const Nav = () => {
                                     pos: 'absolute',
                                     w: '0',
                                     h: '2px',
-                                    bg: 'white',
                                     bottom: '-2px',
                                     bg: 'purple.600',
                                     transition: 'width .3s',

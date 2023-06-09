@@ -10,6 +10,7 @@ import About from './components/About';
 import CommiteeMembers from './components/CommiteeMembers';
 import Speakers from './components/Speakers';
 import Submition from './components/Submition';
+import Schedule from './components/Schedule';
 
 // event time end - Algeria
 const eventTimeEnd = new Date('2023-11-08T00:00:00');
@@ -20,7 +21,7 @@ function App() {
       <div className="App"
         style={{
           backgroundColor: 'var(--chakra-colors-gray-900)',
-          width: '99vw',
+          width: '100vw',
           height: 'auto',
           minHeight: '100vh',
           overflow: 'hidden',
@@ -32,6 +33,7 @@ function App() {
         <CommiteeMembers />
         <Speakers />
         <Submition />
+        <Schedule />
       </div>
     </ChakraProvider>
   );

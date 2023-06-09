@@ -6,4 +6,23 @@
 
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* scroll style*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--chakra-colors-gray-900)
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--chakra-colors-purple-500);
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--chakra-colors-purple-600);
 }

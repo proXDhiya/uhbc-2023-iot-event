@@ -25,7 +25,7 @@ const Submition = () => {
                 bgAttachment="fixed"
                 bgColor="rgba(0, 0, 0, 0.65)"
                 bgBlendMode="darken"
-                py="5rem"
+                py="4rem"
                 id="submition"
             >
                 <Container

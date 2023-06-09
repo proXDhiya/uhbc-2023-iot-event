@@ -167,7 +167,7 @@ const About = () => {
                         fontWeight="light"
                     >
                         The first International Conference on Artificial Intelligence, Smart Technology,
-                        and Communications (AISTC'21) aim to bring together leading academic scientists,
+                        and Communications (AISTC'23) aim to bring together leading academic scientists,
                         international researchers, and professionals to share and exchange their experiences
                         and research studies on all aspects of artificial intelligence. It also offers
                         a premier interdisciplinary forum for researchers, professionals, and students to

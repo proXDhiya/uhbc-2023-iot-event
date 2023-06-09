@@ -45,7 +45,6 @@ const CommiteeMembers = () => {
                 <Box
                     w="container.xl"
                     mx="auto"
-                    mb="4rem"
                 >
                     <Text
                         as="h2"

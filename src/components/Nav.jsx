@@ -24,10 +24,7 @@ const links = [
         name: "Schedule",
         href: "#schedule",
     },
-    {
-        name: "Photos",
-        href: "#photos",
-    },
+    
     {
         name: "Partners",
         href: "#partners",
@@ -69,7 +66,7 @@ const Nav = () => {
             zIndex="1000"
         >
             <Grid
-                templateColumns="auto 1fr repeat(6, 110px)"
+                templateColumns={`auto 1fr repeat(${links.length}, 110px)`}
                 templateRows="1fr"
                 gap="10px"
                 w="container.xl"

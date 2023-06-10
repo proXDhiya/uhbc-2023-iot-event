@@ -36,7 +36,12 @@ const Header = () => {
                 <Image 
                     src={logo}
                     alt="logo"
-                    w="400px"
+                    w={{
+                        base: '300px',
+                        xl: '400px',
+                        lg: '350px',
+                        md: '300px',
+                    }}
                     h="auto"
                     mx="auto"
                 />
@@ -44,7 +49,12 @@ const Header = () => {
                     gridTemplateColumns={"1fr"}
                     gridTemplateRows={"repeat(4, auto)"}
                     gridGap="1rem"
-                    w="container.lg"
+                    w={{
+                        xl: 'container.xl',
+                        lg: 'container.lg',
+                        md: 'container.md',
+                        sm: 'container.sm',
+                    }}
                     h="fit-content"
                     mx="auto"
                     color="white"
@@ -53,7 +63,12 @@ const Header = () => {
                 >
                     <Text
                         textTransform="uppercase"
-                        fontSize="2xl"
+                        fontSize={{
+                            xl: '2xl',
+                            lg: 'xl',
+                            md: 'lg',
+                            sm: 'md'
+                        }}
                         textDecor="underline"
                         _hover={{
                             color: 'purple.200',
@@ -65,7 +80,12 @@ const Header = () => {
                     </Text>
                     <Text
                         textTransform="uppercase"
-                        fontSize="2xl"
+                        fontSize={{
+                            xl: '2xl',
+                            lg: 'xl',
+                            md: 'lg',
+                            sm: 'md'
+                        }}
                         fontWeight="bold"
                         letterSpacing="wide"
                     >
@@ -73,7 +93,12 @@ const Header = () => {
                     </Text>
                     <Text
                         textTransform="uppercase"
-                        fontSize="xl"
+                        fontSize={{
+                            xl: '2xl',
+                            lg: 'xl',
+                            md: 'lg',
+                            sm: 'md'
+                        }}
                         color="gray.300"
                     >
                         FACULTY OF EXACT SCIENCES & INFORMATICS
@@ -83,10 +108,21 @@ const Header = () => {
                         href="#"
                         colorScheme="purple"
                         variant="solid"
-                        size="lg"
+                        size={{
+                            base: 'sm',
+                            xl: 'lg',
+                            lg: 'lg',
+                            md: 'md',
+                            sm: 'sm'
+                        }}
                         w="fit-content"
                         mx="auto"
-                        mt="1rem"
+                        mt={{
+                            xl: '1rem',
+                            lg: '.5rem',
+                            md: '.4rem',
+                            sm: '.3rem'
+                        }}
                         zIndex="1"
                         transition="all .3s"
                     >

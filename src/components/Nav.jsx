@@ -44,18 +44,33 @@ const Nav = () => {
             zIndex="1000"
         >
             <Grid
-                templateColumns={`auto 1fr repeat(${links.length}, 110px)`}
+                templateColumns={{
+                    base: `auto 1fr repeat(${links.length}, auto)`,
+                    sm: `auto auto repeat(${links.length}, auto)`,
+                }}
                 templateRows="1fr"
                 gap="10px"
-                w="container.xl"
+                w={{
+                    base: '100%',
+                    xl: 'container.xl',
+                    lg: 'container.lg',
+                    md: 'container.md',
+                    sm: 'container.sm',
+                }}
                 h="100%"
                 mx="auto"
+                fontSize={{
+                    base: 'sm',
+                    xl: 'md',
+                    lg: 'md',
+                    md: 'sm',
+                    sm: 'sm',
+                }}
             >
                 <Link
                     href="/"
                     color="white"
                     textTransform="uppercase"
-                    fontSize="l"
                     letterSpacing="wide"
                     display="flex"
                     alignItems="center"
@@ -67,13 +82,15 @@ const Nav = () => {
                     <Image 
                         src={logo}
                         alt="logo"
-                        w="60px"
-                        h="60px"
+                        w={{base: '40px', md: '60px', lg: '60px'}}
+                        h={{base: '40px', md: '60px', lg: '60px'}}
                         objectFit="cover"
                         objectPosition="center"
                         mr="10px"
                     />
-                    <Text>
+                    <Text
+                        display={{base: 'none', md: 'none', lg: 'block'}}
+                    >
                         Scientific manifestation 2023
                     </Text>
                 </Link>
@@ -93,6 +110,13 @@ const Nav = () => {
                                 pos="relative"
                                 w="fit-content"
                                 placeSelf="center"
+                                ml={{
+                                    base: '0',
+                                    xl: '35px',
+                                    lg: '30px',
+                                    md: '25px',
+                                    sm: '10px',
+                                }}
                                 _hover={{
                                     textDecoration: 'none',
                                     color: 'purple.300',

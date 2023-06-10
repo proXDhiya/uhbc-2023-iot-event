@@ -110,11 +110,11 @@ const About = () => {
                 h="fit-content"
                 color="white"
                 bg="gray.800"
-                py="4rem"
+                py={{base: '4rem', md: '2rem'}}
                 id="about"
             >
                 <Box
-                    w="container.xl"
+                    w={{base: '100%', md: '100%', lg: 'container.xl'}}
                     mx="auto"
                     mb="4rem"
                 >
@@ -144,9 +144,14 @@ const About = () => {
                     </Text>
                 </Box>
                 <Grid
-                    gridTemplateColumns={"repeat(3, 1fr)"}
+                    // gridTemplateColumns={"repeat(3, 1fr)"}
+                    gridTemplateColumns={{
+                        base: "repeat(1, 1fr)",
+                        md: "repeat(2, 1fr)",
+                        lg: "repeat(3, 1fr)",
+                    }}
                     gap="2rem"
-                    w="container.lg"
+                    w={{base: '100%', md: '100%', lg: 'container.xl'}}
                     h="fit-content"
                     mx="auto"
                 >

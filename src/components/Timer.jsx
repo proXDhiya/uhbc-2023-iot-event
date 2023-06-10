@@ -54,16 +54,16 @@ const Timer = ({ time }) => {
                 h="fit-content"
                 color="white"
                 bg="gray.900"
-                py="4rem"
+                py={{base: '2rem', md: '2rem'}}
             >
                 {
                     timer > 0
                     ? (
                         <Grid
-                            gridTemplateColumns={"repeat(5, 1fr)"}
+                            gridTemplateColumns={"repeat(5, minmax(0, 1fr))"}
                             gridTemplateRows={"1fr 4fr"}
                             gap={6}
-                            w="container.lg"
+                            w={{base: 'container.sm', md: '100%', lg: 'container.lg'}}
                             maxW="container.lg"
                             h="fit-content"
                             mx="auto"
@@ -71,7 +71,7 @@ const Timer = ({ time }) => {
                             <Text
                                 gridColumn={"1 / 6"}
                                 gridRow={"1 / 2"}
-                                fontSize="1.5rem"
+                                fontSize={{base: 'lg', md: 'xl', lg: '2xl'}}
                                 fontWeight="bold"
                                 textAlign="center"
                                 textTransform="uppercase"
@@ -89,8 +89,8 @@ const Timer = ({ time }) => {
                                             justifyContent="center"
                                             alignItems="center"
                                             flexDirection="column"
-                                            gap={4}
-                                            fontSize="1.5rem"
+                                            gap={{base: '0.5rem', md: '1rem'}}
+                                            fontSize={{base: 'lg', md: 'xl', lg: '2xl'}}
                                             fontWeight="bold"
                                             textAlign="center"
                                             textTransform="uppercase"
@@ -109,7 +109,7 @@ const Timer = ({ time }) => {
                                                 {item.value}
                                             </Text>
                                             <Text
-                                                fontSize="1.2rem"
+                                                fontSize={{base: 'sm', md: 'lg', lg: '2xl'}}
                                             >
                                                 {item.name}
                                             </Text>
@@ -122,13 +122,13 @@ const Timer = ({ time }) => {
                     : (
                         <>
                             <Text
-                                fontSize="1.5rem"
+                                fontSize={{base: 'lg', md: 'xl', lg: '2xl'}}
                                 fontWeight="bold"
                                 textAlign="center"
                                 textTransform="uppercase"
                                 color="purple.400"
                                 bg="gray.800"
-                                py="1rem"
+                                py={{base: '1rem', md: '.5rem'}}
                                 px="2rem"
                                 borderRadius="0.5rem"
                                 mx="auto"

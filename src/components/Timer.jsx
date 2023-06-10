@@ -98,6 +98,7 @@ const Timer = ({ time }) => {
                                             bg="gray.800"
                                             borderRadius="0.5rem"
                                             transition="all 0.2s ease-in-out"
+                                            zIndex={1}
                                             _hover={{
                                                 bg: "gray.700",
                                             }}

@@ -5,11 +5,23 @@ import {
     Text,
     Grid,
 } from "@chakra-ui/react";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
 
 import Organizationlist from "../global/_Organization";
 import ScientificList from "../global/_Scientific";
 
 const CommiteeMembers = () => {
+    // particles
+    const particlesInit = React.useCallback(async engine => {
+        console.log("engine", engine);
+        await loadFull(engine);
+    }, []);
+
+    const particlesLoaded = React.useCallback(async container => {
+        console.log("container", container);
+    }, []);
+
     // render
     return (
         <>
@@ -23,6 +35,62 @@ const CommiteeMembers = () => {
                 py="4rem"
                 id="about"
             >
+                <Particles
+                    id="tsparticles"
+                    init={particlesInit}
+                    loaded={particlesLoaded}
+                    options={{
+                        background: {
+                            color: {
+                                value: "transparent",
+                            },
+                            zIndex: -1,
+                        },
+                        fpsLimit: 30,
+                        particles: {
+                            color: {
+                                value: "#ffffff11",
+                            },
+                            links: {
+                                color: "#ffffff11",
+                                distance: 150,
+                                enable: true,
+                                opacity: .4,
+                                width: .5,
+                            },
+                            collisions: {
+                                enable: true,
+                            },
+                            move: {
+                                direction: "none",
+                                enable: true,
+                                outModes: {
+                                    default: "bounce",
+                                },
+                                random: false,
+                                speed: 1,
+                                straight: false,
+                            },
+                            number: {
+                                density: {
+                                    enable: true,
+                                    area: 1000,
+                                },
+                                value: 30,
+                            },
+                            opacity: {
+                                value: 0.2,
+                            },
+                            shape: {
+                                type: "circle",
+                            },
+                            size: {
+                                value: { min: 1, max: 5 },
+                            },
+                        },
+                        detectRetina: true,
+                    }}
+                />
                 <Box
                     w="container.xl"
                     mx="auto"

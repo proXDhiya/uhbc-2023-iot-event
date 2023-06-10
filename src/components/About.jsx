@@ -164,6 +164,7 @@ const About = () => {
                                     cursor="pointer"
                                     transition="all 0.3s ease-in-out"
                                     opacity="0.9"
+                                    zIndex={1}
                                     _hover={{
                                         opacity: "1",
                                         transform: "scale(1.03)"
@@ -210,6 +211,7 @@ const About = () => {
                                                             textTransform="uppercase"
                                                             mb="0.7rem"
                                                             transition="all 0.3s ease-in-out"
+                                                            zIndex={1}
                                                             _hover={{
                                                                 color: "purple.300",
                                                                 fontWeight: "bold",

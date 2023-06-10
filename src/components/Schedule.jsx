@@ -42,7 +42,7 @@ const Schedule = () => {
                     >
                         SCHEDULE
                     </Text>
-                    <Accordion allowToggle>
+                    <Accordion allowToggle zIndex={1}>
                         {
                             ScheduleData.map((item, index) => {
                                 return (

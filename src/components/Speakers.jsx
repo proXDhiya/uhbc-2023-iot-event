@@ -93,6 +93,7 @@ const Speakers = () => {
                                 alignItems="center"
                                 justifyContent="center"
                                 transition="all .3s ease-in-out"
+                                zIndex="1"
                                 _hover={{
                                     transform: "scale(1.05)",
                                 }}

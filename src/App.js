@@ -3,6 +3,9 @@ import {
   ChakraProvider
 } from "@chakra-ui/react"
 
+// Particles
+import ParticlesComponent from './components/Particles';
+
 // components
 import Header from './components/Header';
 import Timer from './components/Timer';
@@ -15,6 +18,7 @@ import EventPhotos from './components/EventPhotos';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BitCrew from './components/BitCrew';
 
 // event time end - Algeria
 const eventTimeEnd = new Date('2023-11-08T00:00:00');
@@ -37,6 +41,7 @@ function App() {
           overflow: 'hidden',
         }}
       >
+        <ParticlesComponent />
         <Header />
         <Timer time={eventTimeEnd} />
         <About />
@@ -46,6 +51,7 @@ function App() {
         <Schedule />
         <EventPhotos />
         <Partners />
+        <BitCrew />
         <Contact />
         <Footer />
       </div>

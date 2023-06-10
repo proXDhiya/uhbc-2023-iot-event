@@ -11,11 +11,6 @@ import {
     Spacer
 } from "@chakra-ui/react";
 
-// icons
-import {
-    FaFacebook,
-} from "react-icons/fa";
-
 import {
     IoLogoOctocat
 } from "react-icons/io";

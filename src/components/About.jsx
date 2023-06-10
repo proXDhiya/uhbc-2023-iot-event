@@ -24,11 +24,8 @@ import {
 
 // import images
 import comutingImage from '../utils/img/cards/computing.webp';
-import energyImage from '../utils/img/cards/energy.webp';
 import informationImage from '../utils/img/cards/si.webp';
 import aiImage from '../utils/img/cards/ai.webp';
-import trendsImage from '../utils/img/cards/tech.webp';
-import ambientImage from '../utils/img/cards/int.webp';
 import networkingImage from '../utils/img/cards/network.webp';
 import backgroundImage from '../utils/img/aa5.webp';
 
@@ -42,16 +39,6 @@ const list = [
             "Quantum Computing",
             "Distributed and parallel systems",
             "Cognitive Computing",
-        ]
-    },
-    {
-        img: energyImage,
-        title: "ENERGY AND RESOURCES",
-        ul: [
-            "Sustainable energy",
-            "sustainable environment",
-            "Environment and Technologies",
-            "Energy and Resources",
         ]
     },
     {
@@ -77,28 +64,6 @@ const list = [
         ]
     },
     {
-        img: trendsImage,
-        title: "TECHNOLOGY TRENDS",
-        ul: [
-            "Big Data Management and Analytics",
-            "Internet of Things",
-            "Blockchain",
-            "Datamining",
-            "Mobile Applications",
-        ]
-    },
-    {
-        img: ambientImage,
-        title: "AMBIENT INTELLIGENCE",
-        ul: [
-            "Smart Network Communications",
-            "Smart Agriculture& IoT Solutions",
-            "Smart Connected Devices",
-            "Smart helthcare",
-            "Sensors and measurements",
-        ]
-    },
-    {
         img: networkingImage,
         title: "Networking",
         ul: [
@@ -115,7 +80,7 @@ const list2 = [
     {
         icon: <AiFillCalendar />,
         title: "Conference Date",
-        desc: "September 16-17, 2023"
+        desc: "Novembre  8-9, 2023"
     },
     {
         icon: <FaMapMarkedAlt />,
@@ -166,7 +131,7 @@ const About = () => {
                         textAlign="justify"
                         fontWeight="light"
                     >
-                        The first International Conference on Artificial Intelligence, Smart Technology,
+                        The first national Conference on Artificial Intelligence, Smart Technology,
                         and Communications (AISTC'23) aim to bring together leading academic scientists,
                         international researchers, and professionals to share and exchange their experiences
                         and research studies on all aspects of artificial intelligence. It also offers

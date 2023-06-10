@@ -43,7 +43,7 @@ const CommiteeMembers = () => {
                     >
                         <Box
                             w="100%"
-                            h="fit-content"
+                            h="100%"
                             maxW="100%"
                             borderRight="1px dashed #fff"
                         >
@@ -52,8 +52,9 @@ const CommiteeMembers = () => {
                                 fontSize="1.5rem"
                                 lineHeight="2rem"
                                 textTransform="uppercase"
-                                mb="1rem"
+                                mb="2rem"
                                 textAlign="center"
+                                textDecor="underline"
                             >
                                 Organization
                             </Text>
@@ -89,9 +90,53 @@ const CommiteeMembers = () => {
                                 ))
                             }
                         </Box>
-                        <Box>
+                        <Box
+                            w="100%"
+                            h="100%"
+                            maxW="100%"
+                            borderLeft="1px dashed #fff"
+                        >
+                            <Text
+                                as="h3"
+                                fontSize="1.5rem"
+                                lineHeight="2rem"
+                                textTransform="uppercase"
+                                mb="2rem"
+                                textAlign="center"
+                                textDecor="underline"
+                            >
+                                Scientific
+                            </Text>
                             {
-
+                                ScientificList.map((item, index) => (
+                                    <Box
+                                        key={item.id}
+                                        w="100%"
+                                        maxW="100%"
+                                        color="white"
+                                        id="about"
+                                        mb=".7rem"
+                                        textAlign="center"
+                                    >
+                                        <Text
+                                            as="h2"
+                                            fontSize="1.1rem"
+                                            lineHeight="1.5rem"
+                                            textTransform="uppercase"
+                                            fontWeight="bold"
+                                            color={item.color? item.color : "purple.400"}
+                                        >
+                                            {item.name}: {" "}
+                                            <Text
+                                                as="span"
+                                                color="white"
+                                                fontWeight="normal"
+                                            >
+                                                {item.university}
+                                            </Text>
+                                        </Text>
+                                    </Box>
+                                ))
                             }
                         </Box>
                     </Grid>
